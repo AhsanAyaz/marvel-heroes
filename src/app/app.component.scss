@@ -1,0 +1,13 @@
+.mh-app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  &__sidenav {
+    flex: 1;
+    &__menu {
+      width: 260px;
+      padding: 40px;
+    }
+  }
+}

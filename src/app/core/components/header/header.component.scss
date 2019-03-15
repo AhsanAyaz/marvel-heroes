@@ -1,0 +1,9 @@
+.mh-header {
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    &__menu-toggle {
+      margin-right: 10px;
+    }
+  }
+}
