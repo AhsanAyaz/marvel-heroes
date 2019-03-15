@@ -8,6 +8,17 @@
     &__menu {
       width: 260px;
       padding: 40px;
+      &__list {
+        &__item {
+          cursor: pointer;
+          &:hover {
+            background: #dcdcdc;
+          }
+        }
+      }
+    }
+    &__content {
+      padding: 40px;
     }
   }
 }

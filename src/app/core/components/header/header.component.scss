@@ -4,6 +4,10 @@
     align-items: center;
     &__menu-toggle {
       margin-right: 10px;
+      cursor: pointer;
+      &:hover {
+        color: #dcdcdc;
+      }
     }
   }
 }

@@ -1,12 +1,10 @@
 
 <div class="mh-app">
-  <mh-header (menuClick)="sidenav.toggle()"></mh-header>
+  <mh-header (menuClick)="sideNav.toggle()"></mh-header>
   <mat-sidenav-container class="mh-app__sidenav">
-    <mat-sidenav #sidenav mode="over" class="mh-app__sidenav__menu">
-      <mat-list role="list">
-        <mat-list-item role="listitem">Item 1</mat-list-item>
-        <mat-list-item role="listitem">Item 2</mat-list-item>
-        <mat-list-item role="listitem">Item 3</mat-list-item>
+    <mat-sidenav #sideNav mode="over" class="mh-app__sidenav__menu">
+      <mat-list role="list" class="mh-app__sidenav__menu__list">
+        <mat-list-item  class="mh-app__sidenav__menu__list__item" role="listitem" routerLink="/grid" (click)="closeSideNav()">Heroes grid</mat-list-item>
       </mat-list>
     </mat-sidenav>
     <mat-sidenav-content class="mh-app__sidenav__content">
