@@ -4,7 +4,7 @@ import { HeroesGridComponent } from './heroes-grid/heroes-grid.component';
 
 const routes: Routes = [{
   path: 'grid',
-  component: HeroesGridComponent
+  loadChildren: './heroes-grid/heroes-grid.module#HeroesGridModule'
 }];
 
 @NgModule({
