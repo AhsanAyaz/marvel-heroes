@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { environment } from 'src/environments/environment';
 
 
 @NgModule({
@@ -23,7 +24,13 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [{
+    provide: 'MARVEL_API_PUBKEY',
+    useValue: environment.marvelPubKey  // you can fetch this from env variables too
+  }, {
+    provide: 'MARVEL_API_HASH',
+    useValue: environment.marvelPubHash
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,6 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesGridComponent } from './heroes-grid/heroes-grid.component';
 
 const routes: Routes = [{
+  path: '',
+  redirectTo: 'grid',
+  pathMatch: 'full'
+}, {
   path: 'grid',
   loadChildren: './heroes-grid/heroes-grid.module#HeroesGridModule'
 }];
