@@ -9,6 +9,9 @@ const routes: Routes = [{
 }, {
   path: 'grid',
   loadChildren: './heroes-grid/heroes-grid.module#HeroesGridModule'
+}, {
+  path: 'list',
+  loadChildren: './heroes-list/heroes-list.module#HeroesListModule'
 }];
 
 @NgModule({

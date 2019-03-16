@@ -1,0 +1,20 @@
+.heroes {
+  max-width: 960px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+  }
+
+  &__spinner, &__search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__search-form {
+    width: 100%;
+    &__field {
+      width: 100%;
+    }
+  }
+}

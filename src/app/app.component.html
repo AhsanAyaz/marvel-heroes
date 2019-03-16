@@ -4,7 +4,12 @@
   <mat-sidenav-container class="mh-app__sidenav">
     <mat-sidenav #sideNav mode="over" class="mh-app__sidenav__menu">
       <mat-list role="list" class="mh-app__sidenav__menu__list">
-        <mat-list-item  class="mh-app__sidenav__menu__list__item" role="listitem" routerLink="/grid" (click)="closeSideNav()">Heroes grid</mat-list-item>
+        <mat-list-item  class="mh-app__sidenav__menu__list__item" role="listitem" routerLink="/grid" (click)="closeSideNav()">
+          Heroes grid
+        </mat-list-item>
+        <mat-list-item  class="mh-app__sidenav__menu__list__item" role="listitem" routerLink="/list" (click)="closeSideNav()">
+          Heroes list
+        </mat-list-item>
       </mat-list>
     </mat-sidenav>
     <mat-sidenav-content class="mh-app__sidenav__content">
