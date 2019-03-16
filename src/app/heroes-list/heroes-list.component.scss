@@ -5,6 +5,15 @@
     text-align: center;
   }
 
+  &__list {
+    &__hero {
+      cursor: pointer;
+      &:hover {
+        background: #dcdcdc;
+      }
+    }
+  }
+
   &__spinner, &__search-form {
     display: flex;
     flex-direction: row;

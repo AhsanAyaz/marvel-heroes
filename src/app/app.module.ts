@@ -6,9 +6,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatButtonModule } from '@angular/material/button';
 import { environment } from 'src/environments/environment';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -21,8 +20,7 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule,
-    MatButtonModule
+    SharedModule
   ],
   providers: [{
     provide: 'MARVEL_API_PUBKEY',

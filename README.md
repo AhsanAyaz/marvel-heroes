@@ -1,4 +1,15 @@
+[![Build Status](https://travis-ci.org/AhsanAyaz/marvel-heroes.svg?branch=master)](https://travis-ci.org/AhsanAyaz/marvel-heroes)
+
 # MarvelHeroes
+The project is a demo project for a talk given at NgPakistan's Workshop 1 in Karachi.
+
+## SLIDES
+Here are the [SLIDES](https://slides.com/ahsanayaz/angular-architecture)
+
+## DEMO
+The demo is live [here](https://ahsanayaz.github.io/angular-architecture/)
+
+## About App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
 

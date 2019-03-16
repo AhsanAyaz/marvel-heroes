@@ -6,6 +6,7 @@
   cursor: pointer;
   &__image {
     margin: 4px;
+    width: 100px;
     object-fit: contain;
     border-radius: 50%;
     transition: all ease .4s;

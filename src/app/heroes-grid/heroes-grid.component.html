@@ -5,15 +5,21 @@
   <form [formGroup]="searchForm" class="heroes__search-form">
     <mat-form-field class="heroes__search-form__field">
       <input matInput formControlName="name" type="text" placeholder="Search by name (case sensitive)">
-      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="searchForm.get('name').setValue('');">
-        x
+      <button
+        *ngIf="searchForm.get('name').value"
+        mat-button
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="searchForm.get('name').setValue('');">
+        <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
   </form>
   <div class="heroes__spinner" *ngIf="!!loadingHeroes">
     <mat-spinner></mat-spinner>
   </div>
-  <div class="heroes__grid">
+  <div class="heroes__grid" *ngIf="!loadingHeroes && heroes.length">
     <mh-hero-grid-item
       (heroClicked)="showDetails(hero)"
       class="heroes__grid__hero"

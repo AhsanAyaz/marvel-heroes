@@ -4,7 +4,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MarvelService } from '../core/services/marvel.service';
 import { MatDialog } from '@angular/material/dialog';
 import { debounceTime } from 'rxjs/operators';
-import { HeroDetailComponent } from '../heroes-grid/components/hero-detail/hero-detail.component';
+import { HeroDetailComponent } from '../shared/components/hero-detail/hero-detail.component';
 
 @Component({
   selector: 'mh-heroes-list',
