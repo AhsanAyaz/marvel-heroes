@@ -9,16 +9,12 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     HeroesGridComponent,
-    HeroGridItemComponent,
-    HeroDetailComponent
-  ],
-  entryComponents: [
-    HeroDetailComponent
+    HeroGridItemComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +23,8 @@ import { HeroDetailComponent } from './components/hero-detail/hero-detail.compon
     MatProgressSpinnerModule,
     MatInputModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    SharedModule
   ]
 })
 export class HeroesGridModule { }

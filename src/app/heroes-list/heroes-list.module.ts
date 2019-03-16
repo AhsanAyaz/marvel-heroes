@@ -9,6 +9,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [HeroesListComponent],
@@ -19,7 +20,8 @@ import { MatListModule } from '@angular/material/list';
     MatProgressSpinnerModule,
     MatInputModule,
     MatDialogModule,
-    MatListModule
+    MatListModule,
+    SharedModule
   ]
 })
 export class HeroesListModule { }
