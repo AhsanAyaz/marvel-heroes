@@ -7,7 +7,7 @@ The project is a demo project for a talk given at NgPakistan's Workshop 1 in Kar
 Here are the [SLIDES](https://slides.com/ahsanayaz/angular-architecture)
 
 ## DEMO
-The demo is live [here](https://ahsanayaz.github.io/angular-architecture/)
+The demo is live [here](https://ahsanayaz.github.io/marvel-heroes/)
 
 ## About App
 
